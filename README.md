@@ -30,5 +30,5 @@ En index.js codear lo siguiente:
 * Ejecutar dos veces más la función hasta llegar a 100 lesiones
 
 
-### Suban sus respuestas a una nueva rama con sus nombre 🚀
+### Suban sus respuestas a una nueva rama con sus nombres 🚀
 
