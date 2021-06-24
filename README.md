@@ -32,5 +32,5 @@ para mostrar en consola una oración del tipo: 'jugador anota 1'
 #### BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
 * Recibir en la función con rest parameters
 
-###### Suban sus respuestas a sus ramas 🚀
+##### Suban sus respuestas a sus ramas 🚀
 
