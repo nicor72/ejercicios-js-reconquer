@@ -16,19 +16,37 @@ Primero lo primero 😑
 
 #### 4 - Ir a http://localhost:1234, inspeccionar y revisar consola. Deberian ver "vamoooo equipo"
 
-## El ejercicio a realizar 🔥
+## Ejercicio 2 🔥
 
 En index.js codear lo siguiente:
 
-* Inicializar una vareable para contar el número de lesiones. Elegir entre var o let. Justifique su respuesta. 😬
+⚽️
+* Declarar un arreglo que contenga los siguientes verbos: ['jugar', 'anotar', 'pegar']
+*TIP: deben ser strings y pueden ser en cualquier tiempo verbal (ej: jugó)
 
-* Declarar una función que sume nuevas lesiones y muestre en consola el valor del contador de lesiones. Tip: la funcion debe recibir un parametro.
+🏃‍♂️
+* Declarar un objeto que contenga lo siguiente:
+** Nombre de tu jugador favorito de esta copa america
+** Número de partidos jugados en la copa
+** Número de goles anotados en la copa
+** Número de faltas en la copa
 
-* Ejecutar la función para que el contador muestre 64 lesiones
+🐒
+* Acceder directamente al nombre del jugador, al verbo jugar y al número de partidos jugados y mostrar en consola
+*TIP: Usar un solo console.log y se debe formar una oración del tipo "jugador jugó 3"
+
+🪓
+* Destructurar el nombre del jugador, el verbo pegar y el número de faltas en la copa y mostrar en consola
+*TIP: Se debe destructurar antes del console.log y se debe formar una oración del tipo "jugador pega 10"
 
 *BONUS 🏅
-* Ejecutar dos veces más la función hasta llegar a 100 lesiones
+* crear una función y ejecutarla, que reciba el nombre del jugador, un verbo y una propiedad del jugador
+para mostrar en consola una oración del tipo: 'jugador anota 1'
+*BONUS BONUS 🏅 🏅
+* agregar alfinal de la oración un string que complete la oración ej: jugador anota 1 'gol'
 
+*BONUS BONUS BONUS (CRACK) 🏅 🏅 🏅 🎖
+* Recibir en la función con rest parameters
 
 ### Suban sus respuestas a una nueva rama con sus nombres 🚀
 
