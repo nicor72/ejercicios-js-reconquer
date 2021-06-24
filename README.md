@@ -22,15 +22,15 @@ En [index.js](index.js) codear lo siguiente:
 
   ***TIP: Se debe destructurar antes del console.log y se debe formar una oración del tipo "jugador pega 10"*** 🪓
 
-###### BONUS 🏅
+#### BONUS 🏅
 * crear una función y ejecutarla, que reciba el nombre del jugador, un verbo y una propiedad del jugador
 para mostrar en consola una oración del tipo: 'jugador anota 1'
 
-###### BONUS BONUS 🏅 🏅
+#### BONUS BONUS 🏅 🏅
 * agregar alfinal de la oración un string que complete la oración ej: jugador anota 1 'gol'
 
-###### BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
+#### BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
 * Recibir en la función con rest parameters
 
-> Suban sus respuestas a sus ramas 🚀
+###### Suban sus respuestas a sus ramas 🚀
 
