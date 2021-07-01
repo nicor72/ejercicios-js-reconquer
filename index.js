@@ -42,12 +42,6 @@ function oracion2(...params){
 }
 oracion2(jugador.nombre, verbos[1], jugador.goles)
 
-// function oracionCrack(...params) {
-//     console.log(params[0], params[1], params[2], ', goles')
-// }
-// oracionCrack(jugador.nombre, verbos[1], jugador.goles)
-
-
 
 //////////////////////////////////////
 
