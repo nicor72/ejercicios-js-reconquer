@@ -1,4 +1,68 @@
 console.log('----------------------------------------------')
+console.log('Ejercicio 3')
+
+console.log('Paso 1: jugadores')
+// Recorrer el array jugadores con un bucle for desde el principio
+// Saltandose el segundo jugador y terminando el ciclo en el quinto jugador
+// En cada ciclo mostrar el nombre del jugador en consola
+const jugadores = ['Jordan', 'Pippen', 'Oneil', 'Rodman', 'Bryant', 'Barkley']
+
+for (let i = 0; i < jugadores.length; i++) {
+    if (i === 1) continue
+    if (i > 4) break
+    console.log(jugadores[i])
+}
+
+console.log('')
+console.log('Paso 2: mediciones')
+// Recorrer el array mediciones con un bucle for desde el principio hasta el final
+// En cada ciclo mostrar el tipo de cada medicion junto al valor de la medición en consola
+// TIP: usar typeof()
+const mediciones = [100, '86', 1.4, '5.5', 66, true, 'Positivo']
+
+for (let i = 0; i < mediciones.length; i++) {
+    console.log(typeof(mediciones[i]), mediciones[i])
+}
+
+console.log('')
+console.log('Paso 3: conversión')
+// Recorrer nuevamente el array de mediciones 👆 de principio a fin
+// En cada ciclo transformar a tipo String los tipos Int y mostrar en consola
+// TIP: usar .toString()
+// BONUS: En en mismo bucle for pasar los tipo String a tipo Int con parseInt()
+// BONUS BONUS: En en mismo bucle for pasar los tipo String a tipo Int con parseInt()
+
+for (let i = 0; i < mediciones.length; i++) {
+    if (typeof(mediciones[i]) === 'number') {
+        const toString = mediciones[i].toString()
+        console.log(typeof(toString), toString)
+    }
+
+    if (typeof(mediciones[i]) === 'string') {
+        const toNumber = parseInt(mediciones[i])
+        console.log(typeof(toNumber), toNumber)
+    }
+}
+
+console.log('')
+console.log('Paso 4: Doble loop')
+// BONUS BONUS BONUS (CRACK)
+// Usando los arrays ya declarados, recorrer el array jugadores y por cada jugador recorrer todas las mediciones
+// TIP: usar un bucle for dentro otro bucle for
+
+for (let i = 0; i < jugadores.length; i++) {
+    console.log(jugadores[i])
+    for (let i = 0; i < mediciones.length; i++) {
+        console.log(mediciones[i])
+    }
+}
+
+
+
+
+
+console.log('')
+console.log('----------------------------------------------')
 console.log('Ejercicio 2')
 
 // Declarar un arreglo que contenga los siguientes verbos: ['jugar', 'anotar', 'pegar']
