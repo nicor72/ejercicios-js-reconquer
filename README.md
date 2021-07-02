@@ -1,36 +1,47 @@
 # ejercicios-js-reconquer
 
-## Ejercicio 2 🔥
+## Ejercicio 3 🔥
 
 En [index.js](index.js) codear lo siguiente:
 
-1. Declarar un arreglo que contenga los siguientes verbos: ['jugar', 'anotar', 'pegar'] ⚽️
+1. Recorrer el array jugadores con un bucle for desde el principio. Saltandose el segundo jugador y terminando el ciclo en el quinto jugador. En cada ciclo mostrar el nombre del jugador en consola
+```javascript
+const jugadores = ['Jordan', 'Pippen', 'Oneil', 'Rodman', 'Bryant', 'Barkley']
+```
 
-  ***TIP: deben ser strings y pueden ser en cualquier tiempo verbal (ej: jugó)***
+2. Recorrer el array mediciones con un bucle for desde el principio hasta el final. En cada ciclo mostrar el tipo de cada medición junto al valor de la medición en consola
 
-2. Declarar un objeto que contenga lo siguiente:
-  * Nombre de tu jugador favorito de esta copa america
-  * Número de partidos jugados en la copa
-  * Número de goles anotados en la copa
-  * Número de faltas en la copa
+***TIP: usar typeof()***
 
-3. Acceder directamente al nombre del jugador, al verbo jugar y al número de partidos jugados y mostrar en consola 
+```javascript
+const mediciones = [100, '86', 1.4, '5.5', 66, true, 'Positivo']
+```
 
-  ***TIP: Usar un solo console.log y se debe formar una oración del tipo "jugador jugó 3"***
+3. Recorrer nuevamente el array de mediciones 👆 de principio a fin. En cada ciclo transformar a tipo String los tipos Int y mostrar en consola
 
-4. Destructurar el nombre del jugador, el verbo pegar y el número de faltas en la copa y mostrar en consola 
-
-  ***TIP: Se debe destructurar antes del console.log y se debe formar una oración del tipo "jugador pega 10"***
+***TIP: usar .toString()***
 
 #### BONUS 🏅
-* crear una función y ejecutarla, que reciba el nombre del jugador, un verbo y una propiedad del jugador
-para mostrar en consola una oración del tipo: 'jugador anota 1'
-
+En en mismo bucle for pasar los tipo String a tipo Int con parseInt()
 #### BONUS BONUS 🏅 🏅
-* agregar alfinal de la oración un string que complete la oración ej: jugador anota 1 'gol'
+Mostrar también el nuevo tipo
 
 #### BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
-* Recibir en la función con rest parameters
+Usando los arrays ya declarados, recorrer el array jugadores y por cada jugador recorrer todas las mediciones
+
+***TIP: usar un bucle for dentro de otro bucle for***
 
 ##### 🚀 Suban sus respuestas a sus ramas
+
+### Tabla de posiciones
+
+| Nombre | BONUS    |
+| :-------- | :------- | 
+| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | `🏅 🏅 🎖` | 
+| [@webson2020](https://github.com/webson2020) | `🏅` | 
+  
+
+
+
+
 
