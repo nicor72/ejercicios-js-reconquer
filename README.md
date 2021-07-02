@@ -31,9 +31,9 @@ Usando los arrays ya declarados, recorrer el array jugadores y por cada jugador 
 
 ***TIP: usar un bucle for dentro de otro bucle for***
 
-##### 🚀 Suban sus respuestas a sus ramas
+##### 🚀  Suban sus respuestas a sus ramas
 
-### Tabla de posiciones
+## Tabla de posiciones
 
 | Nombre | BONUS    |
 | :-------- | :------- | 
