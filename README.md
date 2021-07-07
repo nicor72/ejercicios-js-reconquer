@@ -37,8 +37,8 @@ Usando los arrays ya declarados, recorrer el array jugadores y por cada jugador 
 
 | Nombre | BONUS    |
 | :-------- | :------- | 
-| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🎖 | 
-| [@webson2020](https://github.com/webson2020) | 🏅 | 
+| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🎖 🎖 | 
+| [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 | 
   
 
 
