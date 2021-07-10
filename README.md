@@ -33,8 +33,8 @@ Inventar otro if con dos operators
 
 | Nombre | BONUS    |
 | :-------- | :------- | 
-| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🎖 | 
-| [@webson2020](https://github.com/webson2020) | 🏅 | 
+| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🎖 🎖 | 
+| [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 | 
   
 
 
