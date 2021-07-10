@@ -1,6 +1,6 @@
 # ejercicios-js-reconquer
 
-## Ejercicio 3 🔥
+## Ejercicio 4 🔥
 
 En [index.js](index.js) codear lo siguiente:
 
