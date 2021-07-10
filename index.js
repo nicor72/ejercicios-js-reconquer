@@ -1,5 +1,73 @@
-console.log('----------------------------------------------')
-console.log('Ejercicio 3')
+
+console.group('Ejercicio 4')
+
+const equipos = [
+    {
+        nombre: 'Brasil',
+        ganados: 3,
+        goles: 10,
+        puntos: 10,
+        eliminado: false
+    },
+    {
+        nombre: 'Argentina',
+        ganados: 3,
+        goles: 7,
+        puntos: 10,
+        eliminado: false
+    },
+    {
+        nombre: 'Chile',
+        ganados: 1,
+        goles: 3,
+        puntos: 5,
+        eliminado: true
+    }
+];
+
+for(i = 0; i < equipos.length; i++) {
+    // console.log(equipos[i])
+
+    // Equality Operator
+    // Mostrar el equipo que sacó 5 puntos.
+    if (/*Aqui Equality Operator*/) {
+        console.log(equipos[i].nombre, '5 puntos')
+    }
+
+    // Logical Operator
+    // Mostrar el equipo que sacó 10 puntos y metió 10 goles.
+    if (/*Aqui Logical Operator*/) {
+        console.log(equipos[i].nombre, 'tiene 10 puntos y 10 goles')
+    }
+
+    // Relational Operator
+    // Mostrar los equipos que sacaron mas de 5 goles.
+    if (/*Aqui Relational Operator*/) {
+        console.log(equipos[i].nombre, 'tiene mas de 5 goles')
+    }
+
+    // BONUS
+    // Conditional Operator
+    // Mostrar 'perdió' si eliminado es true.
+    // Mostrar 'aún no pierde' si eliminado es falso
+    console.log(equipos[i].nombre, /*Aqui Conditional Operator*/)
+
+    // BONUS BONUS
+    // Mostrar los equipos con 4 ganados o con mas de 1 gol
+    if (/*Aqui los dos Operators*/) {
+        console.log(equipos[i].nombre, 'tiene 4 ganados o mas de 1 gol')
+    }
+
+    // BONUS BONUS BONUS
+    // Inventar otro if con dos operators
+    // TIP: se puede agregar otra propiedad al arreglo equipos si quieren
+}
+
+
+
+
+console.groupEnd('')
+console.groupCollapsed('Ejercicio 3')
 
 console.log('Paso 1: jugadores')
 // Recorrer el array jugadores con un bucle for desde el principio
@@ -35,9 +103,8 @@ console.log('Paso 4: Doble loop')
 
 
 
-console.log('')
-console.log('----------------------------------------------')
-console.log('Ejercicio 2')
+console.groupEnd('')
+console.groupCollapsed('Ejercicio 2')
 
 // Declarar un arreglo que contenga los siguientes verbos: ['jugar', 'anotar', 'pegar']
 // TIP: deben ser strings y pueden ser en cualquier tiempo verbal (ej: jugó)
@@ -70,8 +137,8 @@ console.log('Ejercicio 2')
 
 
 
-console.log('----------------------------------------------')
-console.log('Ejercicio 1')
+console.groupEnd('')
+console.groupCollapsed('Ejercicio 1')
 
 // Inicializar una vareable para contar el número de lesiones
 // Elegir entre var o let. Justifique su respuesta. 😬

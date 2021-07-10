@@ -4,32 +4,28 @@
 
 En [index.js](index.js) codear lo siguiente:
 
-1. Recorrer el array jugadores con un bucle for desde el principio. Saltandose el segundo jugador y terminando el ciclo en el quinto jugador. En cada ciclo mostrar el nombre del jugador en consola
-```javascript
-const jugadores = ['Jordan', 'Pippen', 'Oneil', 'Rodman', 'Bryant', 'Barkley']
-```
+Rellenar los ifs con lo siguiente:
 
-2. Recorrer el array mediciones con un bucle for desde el principio hasta el final. En cada ciclo mostrar el tipo de cada medición junto al valor de la medición en consola
+1. Usar Equality Operator: Mostrar el equipo que sacó 5 puntos.
 
-***TIP: usar typeof()***
 
-```javascript
-const mediciones = [100, '86', 1.4, '5.5', 66, true, 'Positivo']
-```
+2. Usar Logical Operator: Mostrar el equipo que sacó 10 puntos y metió 10 goles.
 
-3. Recorrer nuevamente el array de mediciones 👆 de principio a fin. En cada ciclo transformar a tipo String los tipos Int y mostrar en consola
 
-***TIP: usar .toString()***
+3. Usar Relational Operator: Mostrar los equipos que sacaron mas de 5 goles.
+
 
 #### BONUS 🏅
-En en mismo bucle for pasar los tipo String a tipo Int con parseInt()
+Usar Conditional Operator: 
+Mostrar 'perdió' si eliminado es true.
+Mostrar 'aún no pierde' si eliminado es falso
+
 #### BONUS BONUS 🏅 🏅
-Mostrar también el nuevo tipo
+Mostrar los equipos con 4 ganados o con mas de 1 gol
 
 #### BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
-Usando los arrays ya declarados, recorrer el array jugadores y por cada jugador recorrer todas las mediciones
-
-***TIP: usar un bucle for dentro de otro bucle for***
+Inventar otro if con dos operators
+***TIP: se puede agregar otra propiedad al arreglo equipos si quieren***
 
 ##### 🚀  Suban sus respuestas a sus ramas
 
