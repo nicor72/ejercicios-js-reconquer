@@ -41,15 +41,15 @@ function iife() {
 3. Usar la función changeDate para cambiar la fecha del examen.
 
 #### BONUS 🏅
-Usar la función createExamImage para crear un ExamImage. Pasando a la función un objeto con dos propiedades a elección.
+4. Usar la función createExamImage para crear un ExamImage. Pasando a la función un objeto con dos propiedades a elección.
 
-4. Mostrar en consola el nuevo examen.
+5. Mostrar en consola el nuevo examen.
 
 #### BONUS BONUS 🏅
-Crear una nueva función y usarla.
+6. Crear una nueva función y usarla.
 
 #### BONUS BONUS BONUS (CRACK) 🎖
-Crear un nuevo IIFE con al menos una función y usarla.
+7. Crear un nuevo IIFE con al menos una función y usarla.
 
 ##### 🚀  Suban sus respuestas a sus ramas
 
