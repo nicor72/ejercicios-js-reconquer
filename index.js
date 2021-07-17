@@ -1,3 +1,57 @@
+
+console.group('Ejercicio 5');
+
+// Transformar la siguiente funcion en una IIFE.
+const app = (function iife() {
+    let examen = {
+        name: 'Resonancia Rodilla',
+        date: '18-10-2019'
+    }
+
+    console.log('Examen inicial: ', examen)
+
+    function changeName(newName) {
+        examen.name = newName
+    }
+
+    function changeDate(newDate) {
+        examen.date = newDate
+    }
+
+    function createExamImage(examImage) {
+        examen.examImage = examImage
+    }
+
+    return {
+        examen,
+        changeName,
+        changeDate,
+        createExamImage
+    }
+})();
+
+// Usar la función changeName para cambiar el nombre del examen.
+app.changeName('newName')
+
+// Usar la función changeDate para cambiar la fecha del examen.
+app.changeDate('123456')
+
+// BONUS
+// Usar la función createExamImage para crear un ExamImage.
+// pasando a la función un objeto con so propiedades a elección
+app.createExamImage({ image: 'pcr.jpg', date: '12-06-2020' })
+
+// Mostrar el consola el nuevo examen
+console.log(app.examen)
+
+// BONUS BONUS
+// Crear una nueva función y usarla
+
+// BONUS BONUS BONUS (CRACK)
+// Crear un nuevo IIFE con al menos una funcióm y usarla
+
+
+console.groupEnd()
 console.group('Ejercicio 4')
 
 const equipos = [
