@@ -1,5 +1,55 @@
+console.group('Ejercicio 5');
 
-console.group('Ejercicio 4')
+// Transformar la siguiente funcion en una IIFE.
+function iife() {
+    let examen = {
+        name: 'Resonancia Rodilla',
+        date: '18-10-2019'
+    }
+
+    console.log('Examen inicial: ', examen)
+
+    function changeName(newName) {
+        examen.name = newName
+    }
+
+    function changeDate(newDate) {
+        examen.date = newDate
+    }
+
+    function createExamImage(examImage) {
+        examen.examImage = examImage
+    }
+
+    return {
+        examen,
+        changeName,
+        changeDate,
+        createExamImage
+    }
+}
+
+// Usar la función changeName para cambiar el nombre del examen.
+
+// Usar la función changeDate para cambiar la fecha del examen.
+
+// BONUS
+// Usar la función createExamImage para crear un ExamImage.
+// pasando a la función un objeto con dos propiedades a elección
+
+// Mostrar el consola el nuevo examen
+
+// BONUS BONUS
+// Crear una nueva función y usarla
+
+// BONUS BONUS BONUS (CRACK)
+// Crear un nuevo IIFE con al menos una función y usarla
+
+
+console.groupEnd()
+
+
+console.groupCollapsed('Ejercicio 4')
 
 const equipos = [
     {
@@ -25,46 +75,43 @@ const equipos = [
     }
 ];
 
-for(i = 0; i < equipos.length; i++) {
-    // console.log(equipos[i])
+// for(i = 0; i < equipos.length; i++) {
+//     // console.log(equipos[i])
 
-    // Equality Operator
-    // Mostrar el equipo que sacó 5 puntos.
-    if (/*Aqui Equality Operator*/) {
-        console.log(equipos[i].nombre, '5 puntos')
-    }
+//     // Equality Operator
+//     // Mostrar el equipo que sacó 5 puntos.
+//     if (/*Aqui Equality Operator*/) {
+//         console.log(equipos[i].nombre, '5 puntos')
+//     }
 
-    // Logical Operator
-    // Mostrar el equipo que sacó 10 puntos y metió 10 goles.
-    if (/*Aqui Logical Operator*/) {
-        console.log(equipos[i].nombre, 'tiene 10 puntos y 10 goles')
-    }
+//     // Logical Operator
+//     // Mostrar el equipo que sacó 10 puntos y metió 10 goles.
+//     if (/*Aqui Logical Operator*/) {
+//         console.log(equipos[i].nombre, 'tiene 10 puntos y 10 goles')
+//     }
 
-    // Relational Operator
-    // Mostrar los equipos que sacaron mas de 5 goles.
-    if (/*Aqui Relational Operator*/) {
-        console.log(equipos[i].nombre, 'tiene mas de 5 goles')
-    }
+//     // Relational Operator
+//     // Mostrar los equipos que sacaron mas de 5 goles.
+//     if (/*Aqui Relational Operator*/) {
+//         console.log(equipos[i].nombre, 'tiene mas de 5 goles')
+//     }
 
-    // BONUS
-    // Conditional Operator
-    // Mostrar 'perdió' si eliminado es true.
-    // Mostrar 'aún no pierde' si eliminado es falso
-    console.log(equipos[i].nombre, /*Aqui Conditional Operator*/)
+//     // BONUS
+//     // Conditional Operator
+//     // Mostrar 'perdió' si eliminado es true.
+//     // Mostrar 'aún no pierde' si eliminado es falso
+//     console.log(equipos[i].nombre, /*Aqui Conditional Operator*/)
 
-    // BONUS BONUS
-    // Mostrar los equipos con 4 ganados o con mas de 1 gol
-    if (/*Aqui los dos Operators*/) {
-        console.log(equipos[i].nombre, 'tiene 4 ganados o mas de 1 gol')
-    }
+//     // BONUS BONUS
+//     // Mostrar los equipos con 4 ganados o con mas de 1 gol
+//     if (/*Aqui los dos Operators*/) {
+//         console.log(equipos[i].nombre, 'tiene 4 ganados o mas de 1 gol')
+//     }
 
-    // BONUS BONUS BONUS
-    // Inventar otro if con dos operators
-    // TIP: se puede agregar otra propiedad al arreglo equipos si quieren
-}
-
-
-
+//     // BONUS BONUS BONUS
+//     // Inventar otro if con dos operators
+//     // TIP: se puede agregar otra propiedad al arreglo equipos si quieren
+// }
 
 console.groupEnd('')
 console.groupCollapsed('Ejercicio 3')

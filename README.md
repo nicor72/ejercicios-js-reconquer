@@ -1,31 +1,55 @@
 # ejercicios-js-reconquer
 
-## Ejercicio 4 🔥
+## Ejercicio 5 🔥
 
 En [index.js](index.js) codear lo siguiente:
 
-Rellenar los ifs con lo siguiente:
+1. Transformar la siguiente funcion en una IIFE.
 
-1. Usar Equality Operator: Mostrar el equipo que sacó 5 puntos.
+```javascript
+function iife() {
+    let examen = {
+        name: 'Resonancia Rodilla',
+        date: '18-10-2019'
+    }
 
+    console.log('Examen inicial: ', examen)
 
-2. Usar Logical Operator: Mostrar el equipo que sacó 10 puntos y metió 10 goles.
+    function changeName(newName) {
+        examen.name = newName
+    }
 
+    function changeDate(newDate) {
+        examen.date = newDate
+    }
 
-3. Usar Relational Operator: Mostrar los equipos que sacaron mas de 5 goles.
+    function createExamImage(examImage) {
+        examen.examImage = examImage
+    }
 
+    return {
+        examen,
+        changeName,
+        changeDate,
+        createExamImage
+    }
+}
+```
+
+2. Usar la función changeName para cambiar el nombre del examen.
+
+3. Usar la función changeDate para cambiar la fecha del examen.
 
 #### BONUS 🏅
-Usar Conditional Operator: 
-Mostrar 'perdió' si eliminado es true.
-Mostrar 'aún no pierde' si eliminado es falso
+Usar la función createExamImage para crear un ExamImage. Pasando a la función un objeto con dos propiedades a elección.
 
-#### BONUS BONUS 🏅 🏅
-Mostrar los equipos con 4 ganados o con mas de 1 gol
+4. Mostrar en consola el nuevo examen.
 
-#### BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
-Inventar otro if con dos operators
-***TIP: se puede agregar otra propiedad al arreglo equipos si quieren***
+#### BONUS BONUS 🏅
+Crear una nueva función y usarla.
+
+#### BONUS BONUS BONUS (CRACK) 🎖
+Crear un nuevo IIFE con al menos una función y usarla.
 
 ##### 🚀  Suban sus respuestas a sus ramas
 
@@ -33,8 +57,8 @@ Inventar otro if con dos operators
 
 | Nombre | BONUS    |
 | :-------- | :------- | 
-| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🎖 🎖 | 
-| [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 | 
+| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🏅 🎖 🎖 | 
+| [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 🏅 | 
   
 
 
