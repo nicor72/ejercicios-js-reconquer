@@ -118,7 +118,7 @@
 
 // Recorrer el array jugadores con un bucle for desde el principio.
 
-const jugadores = ['Jordan', 'Pippen', 'Oneil', 'Rodman', 'Bryant', 'Barkley']
+// const jugadores = ['Jordan', 'Pippen', 'Oneil', 'Rodman', 'Bryant', 'Barkley']
 
 // for (let i = 0 ; i < jugadores.length; i++) {
 //     console.log(jugadores[i])   
@@ -140,7 +140,7 @@ const jugadores = ['Jordan', 'Pippen', 'Oneil', 'Rodman', 'Bryant', 'Barkley']
 // En cada ciclo mostrar el tipo de cada medición junto al valor de la medición en consola
 // TIP: usar typeof()
 
-const mediciones = [100, '86', 1.4, '5.5', 66, true, 'Positivo']
+// const mediciones = [100, '86', 1.4, '5.5', 66, true, 'Positivo']
 // for (let i = 0; i < mediciones.length; i++) {
     
 //     console.log(mediciones[i], typeof(mediciones[i]))
@@ -186,12 +186,12 @@ const mediciones = [100, '86', 1.4, '5.5', 66, true, 'Positivo']
 // BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
 // Usando los arrays ya declarados, recorrer el array jugadores y por cada jugador recorrer todas las mediciones
 
-for (let i = 0 ; i < jugadores.length; i++) {
-    console.log(jugadores[i])
-    for (let i = 0; i < mediciones.length; i++) {
-        console.log(mediciones[i])
-   }
-}
+// for (let i = 0 ; i < jugadores.length; i++) {
+//     console.log(jugadores[i])
+//     for (let i = 0; i < mediciones.length; i++) {
+//         console.log(mediciones[i])
+//    }
+// }
 
 
 
@@ -213,3 +213,167 @@ for (let i = 0 ; i < jugadores.length; i++) {
 //  const nuevoContador = contador || contador2
  
 //  console.log(contador)
+
+
+
+// console.group('Ejercicio 4')   
+
+// const equipos = [
+//     {
+//         nombre: 'Brasil',
+//         ganados: 3,
+//         goles: 10,
+//         puntos: 10,
+//         eliminado: false,
+//         player: "neymar"
+//     },
+//     {
+//         nombre: 'Argentina',
+//         ganados: 3,
+//         goles: 7,
+//         puntos: 10,
+//         eliminado: false,
+//         player: "messi"
+//     },
+//     {
+//         nombre: 'Chile',
+//         ganados: 1,
+//         goles: 3,
+//         puntos: 5,
+//         eliminado: true,
+//         player: "vidal"
+//     }
+// ];
+
+// for(i = 0; i < equipos.length; i++) {
+//     // console.log(equipos[i])
+
+//     // Equality Operator
+//     // Mostrar el equipo que sacó 5 puntos.
+    
+//     if (equipos[i].puntos === 5) {
+//         console.log(equipos[i].nombre, '5 puntos')
+//     }
+
+//     // Logical Operator
+//     // Mostrar el equipo que sacó 10 puntos y metió 10 goles.
+    
+//     if (equipos[i].puntos === 10 && equipos[i].goles === 10) {
+//         console.log(equipos[i].nombre, 'tiene 10 puntos y 10 goles')
+//     }
+
+//     // Relational Operator
+//     // Mostrar los equipos que sacaron mas de 5 goles.
+
+//     if (equipos[i].goles > 5) {
+//         console.log(equipos[i].nombre, 'tiene mas de 5 goles')
+//     }
+
+//     // BONUS
+//     // Conditional Operator
+//     // Mostrar 'perdió' si eliminado es true.
+//     // Mostrar 'aún no pierde' si eliminado es falso
+//     console.log(equipos[i].nombre, equipos[i].eliminado? "perdió" : "aún no pierde")
+
+//     // BONUS BONUS
+//     // Mostrar los equipos con 4 ganados o con mas de 1 gol
+//     if (equipos[i].ganados===4 || equipos[i].goles>1) {
+//         console.log(equipos[i].nombre, 'tiene 4 ganados o mas de 1 gol')
+//     }
+
+// //     // BONUS BONUS BONUS
+// //     // Inventar otro if con dos operators
+// //     // TIP: se puede agregar otra propiedad al arreglo equipos si quieren
+// if (equipos[i].ganados===3 && equipos[i].player === "neymar") {
+//     console.log(equipos[i].nombre, 'chao jogobonito')
+// }
+
+// }
+
+// jueves 22 de julio IIFEs
+
+console.group('Ejercicio 5');
+
+// Transformar la siguiente funcion en una IIFE.
+let app = (function iife() {
+    let examen = {
+        name: 'Resonancia Rodilla',
+        date: '18-10-2019',
+    }
+
+    console.log('Examen inicial: ', examen)
+
+    
+    function changeName(newName) {
+        examen.name = newName
+
+    }
+
+    function changeDate(newDate) {
+        examen.date = newDate
+    }
+
+    function createExamImage(examImage) {
+        examen.examImage = examImage
+    }
+
+    function createdTypeInjury(injury){
+        examen.Injury = injury  
+    }
+
+    return {
+        examen,
+        changeName,
+        changeDate,
+        createExamImage,
+        createdTypeInjury
+    }
+})();
+
+console.log(app)
+app.changeName('ecografía')
+app.changeDate("20-10-2019")
+app.createExamImage({type: 'sangre', fecha: '22-07-2021'})
+app.createdTypeInjury('Brazo')
+console.log(app.examen)
+
+
+let Aplication = (function() {
+    let alumno = {
+        name: 'Nicolás Rossetti',
+        course: 'cuarto medio C',
+    }
+
+    console.log('Datos generales: ', alumno)
+
+    function ChangeCourse(newCourse) {
+        alumno.course = newCourse
+    }
+
+    return {
+        alumno,
+        ChangeCourse
+    }
+})();
+
+    Aplication.ChangeCourse('cuarto medio A')
+    console.log(Aplication.alumno)
+// Usar la función changeName para cambiar el nombre del examen.
+
+// Usar la función changeDate para cambiar la fecha del examen.
+
+// BONUS
+// Usar la función createExamImage para crear un ExamImage.
+// pasando a la función un objeto con dos propiedades a elección
+
+// Mostrar el consola el nuevo examen
+
+// BONUS BONUS
+// Crear una nueva función y usarla
+
+// BONUS BONUS BONUS (CRACK)
+// Crear un nuevo IIFE con al menos una función y usarla
+
+
+console.groupEnd()
+
