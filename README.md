@@ -1,57 +1,24 @@
 # ejercicios-js-reconquer
 
-## Ejercicio 5 🔥
+## Ejercicio 6 🚀
 
 En [index.js](index.js) codear lo siguiente:
 
-1. Transformar la siguiente funcion en una IIFE.
+1. Crear una función que reciba un argumento y devuelva el tipo de este.
+***TIP: usar typeof()***
 
-```javascript
-function iife() {
-    let examen = {
-        name: 'Resonancia Rodilla',
-        date: '18-10-2019'
-    }
+2. Crear la versión arrow function de la función anterior.
 
-    console.log('Examen inicial: ', examen)
-
-    function changeName(newName) {
-        examen.name = newName
-    }
-
-    function changeDate(newDate) {
-        examen.date = newDate
-    }
-
-    function createExamImage(examImage) {
-        examen.examImage = examImage
-    }
-
-    return {
-        examen,
-        changeName,
-        changeDate,
-        createExamImage
-    }
-}
-```
-
-2. Usar la función changeName para cambiar el nombre del examen.
-
-3. Usar la función changeDate para cambiar la fecha del examen.
+3. Agregar un default parameter al argumento de la función. Que sea undefined por defecto.
 
 #### BONUS 🏅
-4. Usar la función createExamImage para crear un ExamImage. Pasando a la función un objeto con dos propiedades a elección.
-
-5. Mostrar en consola el nuevo examen.
+4. Escribir la arrow function en una linea.
 
 #### BONUS BONUS 🏅
-6. Crear una nueva función y usarla.
+5. Pasarle un array o un objeto a la función.
 
 #### BONUS BONUS BONUS (CRACK) 🎖
-7. Crear un nuevo IIFE con al menos una función y usarla.
-
-##### 🚀  Suban sus respuestas a sus ramas
+6. Crear un array con diferentes tipos (int, string, boolean, etc) y usar un for para recorrerlo y en cada iteración usar la función creada para mostrar el tipo en consola.
 
 ## Tabla de posiciones
 
