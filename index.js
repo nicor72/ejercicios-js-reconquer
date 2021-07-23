@@ -1,5 +1,35 @@
+console.group('Ejercicio 6')
 
-console.group('Ejercicio 5');
+// Crear una función que reciba un argumento y devuelva el tipo de este.
+// TIP: usar typeof()
+function getType(argument) {
+    return typeof(argument)
+} 
+
+// Crear la versión arrow function de la función anterior.
+const getTypeArrow = (argument) => typeof(argument)
+
+// Agregar un default parameter al argumento de la función. Que sea undefined por defecto.
+const getTypeDefaultParam = (argument = undefined) => typeof(argument)
+
+// BONUS
+// Escribir la arrow function en una linea.
+
+// BONUS BONUS
+// Pasarle un array o un objeto a la función
+console.log(getType({ prop: 'value' }))
+
+// BONUS BONUS BONUS (CRACK)
+// crear un array con diferentes tipos (int, string, boolean, etc) y usar un for para recorrerlo y en cada iteración usar la función creada para mostrar el tipo en consola.
+const differentTypes = ['string', false, 100, null, [], {}]
+
+for (let i = 0; i < differentTypes.length; i++) {
+    console.log(getType(differentTypes[i]))
+}
+
+console.groupEnd()
+
+console.groupCollapsed('Ejercicio 5');
 
 // Transformar la siguiente funcion en una IIFE.
 const app = (function iife() {
