@@ -1,55 +1,281 @@
-console.log('----------------------------------------------')
-console.log('Ejercicio 3')
+console.group('Ejercicio 6')
 
-console.log('Paso 1: jugadores')
+// 1. Crear una función que reciba un argumento y devuelva el tipo de este.
+// TIP: usar typeof()
+
+    function getID(argumento){
+        return typeof(argumento)
+    }
+
+    
+// 2. Crear la versión arrow function de la función anterior.
+
+    let getID = (argumento) => typeof(argumento)
+
+
+// 3. Agregar un default parameter al argumento de la función. Que sea undefined por defecto.
+
+    let getID = (argumento=undefined) => typeof(argumento)
+
+// BONUS
+// 4. Escribir la arrow function en una linea.
+
+// BONUS BONUS
+// 5. Pasarle un array o un objeto a la función.
+
+// BONUS BONUS BONUS (CRACK)
+// 6. Crear un array con diferentes tipos (int, string, boolean, etc) 
+// y usar un for para recorrerlo y en cada iteración usar la función creada para mostrar el tipo en consola.
+
+
+console.groupEnd()
+
+////////////////////////////
+
+// console.group('Ejercicio 5');
+
+// Transformar la siguiente funcion en una IIFE.
+// let app = (function iife() {
+//     let examen = {
+//         name: 'Resonancia Rodilla',
+//         date: '18-10-2019'
+//     }
+
+//     // console.log('Examen inicial: ', examen)
+
+//     function changeName(newName) {
+//         examen.name = newName
+//     }
+
+//     function changeDate(newDate) {
+//         examen.date = newDate
+//     }
+
+//     function createExamImage(examImage) {
+//         examen.examImage = examImage
+        
+//     }
+
+//     function createDiagnostic(examDiagnostic) {
+//         examen.examDiagnostic = examDiagnostic
+        
+//     }
+
+//     return {
+//         examen,
+//         changeName,
+//         changeDate,
+//         createExamImage,
+//         createDiagnostic
+//     }
+// })();
+
+// console.log(app)
+// app.changeName("examen-2");
+// app.changeDate("18-10-2020");
+// app.createDiagnostic("el paciente no tiene nada, un milagro");
+// app.createExamImage({prop1:"nombre1" , prop2:"nombre2"});
+
+// console.log(app.examen)
+
+// Usar la función changeName para cambiar el nombre del examen.
+
+// Usar la función changeDate para cambiar la fecha del examen.
+
+// BONUS
+// Usar la función createExamImage para crear un ExamImage.
+// pasando a la función un objeto con dos propiedades a elección
+
+// Mostrar el consola el nuevo examen
+
+// BONUS BONUS
+// Crear una nueva función y usarla
+
+// BONUS BONUS BONUS (CRACK)
+// Crear un nuevo IIFE con al menos una función y usarla
+
+// let app2 = (function() {
+//     // let examen = {
+//     //     name: 'Resonancia Rodilla',
+//     //     date: '18-10-2019'
+//     // }
+
+//     function changeName(newName) {
+//         examen.name = newName
+//         console.log(this.examen)
+//     }
+
+//     // const changeName = () => console.log(examen)
+    
+
+
+//     return {
+//         examen:{
+//             name: 'Resonancia Rodilla',
+//             date: '18-10-2019'
+//         },
+//         changeName:function changeName(newName) {
+//             // examen.name = newName
+//             console.log(this.examen)
+//         }
+        
+//     }
+// })();
+
+// app2.changeName("nombre1")
+
+
+     
+//////////////////////////////////////////////////
+     
+    //  const lesiones = (function(){
+    //         let contador = 30;
+    //         console.log(contador)
+    //         function suma (lesiones){
+    //             console.log(contador)
+    //             return lesiones+contador
+    //         }
+    //         return {suma, contador}
+    //      })()
+
+    //     // console.log (lesiones.suma(lesiones.contador))
+    //     // console.log(lesiones.contador) 
+    //     // console.log(contador)
+
+///////////////////////////////////
+// console.groupEnd()
+// console.groupCollapsed('Ejercicio 4')
+
+// const equipos = [
+//     {
+//         nombre: 'Brasil',
+//         ganados: 3,
+//         goles: 10,
+//         puntos: 10,
+//         eliminado: false,
+//         faltas: 19
+//     },
+//     {
+//         nombre: 'Argentina',
+//         ganados: 3,
+//         goles: 7,
+//         puntos: 10,
+//         eliminado: false,
+//         faltas: 5
+//     },
+//     {
+//         nombre: 'Chile',
+//         ganados: 1,
+//         goles: 3,
+//         puntos: 5,
+//         eliminado: true,
+//         faltas: 3
+//     }
+// ];
+
+// for(i = 0; i < equipos.length; i++) {
+//     // console.log(equipos[i])
+
+//     // Equality Operator
+//     // Mostrar el equipo que sacó 5 puntos.
+//     if (equipos[i].puntos===5) {
+//         console.log(equipos[i].nombre, '5 puntos')
+//     }
+
+//     // Logical Operator
+//     // Mostrar el equipo que sacó 10 puntos y metió 10 goles.
+//     if (equipos[i].puntos===10 && equipos[i].goles===10) {
+//         console.log(equipos[i].nombre, 'tiene 10 puntos y 10 goles')
+//     }
+
+//     // Relational Operator
+//     // Mostrar los equipos que sacaron mas de 5 goles.
+//     if (equipos[i].goles>5) {
+//         console.log(equipos[i].nombre, 'tiene mas de 5 goles')
+//     }
+
+//     // BONUS
+//     // Conditional Operator
+//     // Mostrar 'perdió' si eliminado es true.
+//     // Mostrar 'aún no pierde' si eliminado es falso
+//     console.log(equipos[i].nombre, equipos[i].eliminado? "Perdió" : "Aún no pierde")
+
+//     // BONUS BONUS
+//     // Mostrar los equipos con 4 ganados o con mas de 1 gol
+//     if (equipos[i].ganados===4 || equipos[i].goles>1) {
+//         console.log(equipos[i].nombre, 'tiene 4 ganados o mas de 1 gol')
+//     }
+
+//     // BONUS BONUS BONUS
+//     // Inventar otro if con dos operators
+//     // TIP: se puede agregar otra propiedad al arreglo equipos si quieren
+
+//     if (equipos[i].goles>2 || equipos[i].faltas>10){
+//         console.log(equipos[i].goles ,equipos[i].faltas, equipos[i].nombre, 'es el equipo con mas faltas' )
+//     }
+// }
+
+
+// console.log('----------------------------------------------')
+// console.log('Ejercicio 3')
+
+// console.log('Paso 1: jugadores')
 // Recorrer el array jugadores con un bucle for desde el principio
 // Saltandose el segundo jugador y terminando el ciclo en el quinto jugador
 // En cada ciclo mostrar el nombre del jugador en consola
 
-const jugadores = ['Salas','Zamorano', 'Sanchez', 'Vidal','Medel','Bravo']
+// const jugadores = ['Salas','Zamorano', 'Sanchez', 'Vidal','Medel','Bravo']
 
-for (let i=0; i<jugadores.length; i++){
-    if (i=== 1)
-    continue;  
-    console.log(jugadores[i])
-}
+// for (let i=0; i<jugadores.length; i++){
+//     if (i=== 1)
+//     continue;  
+//     if (i===5)
+//     break;
+//     console.log(jugadores[i])
+// }
 
-console.log('')
-console.log('Paso 2: mediciones')
+// console.log('')
+// console.log('Paso 2: mediciones')
 // Recorrer el array mediciones con un bucle for desde el principio hasta el final
 // En cada ciclo mostrar el tipo de cada medicion junto al valor de la medición en consola
 // TIP: usar typeof()
-const mediciones = [100, '86', 1.4, '5.5', 66, true, 'Positivo']
+// const mediciones = [100, '86', 1.4, '5.5', 66, true, 'Positivo']
 
-for (let i=0; i<mediciones.length; i++){
-    console.log(typeof(mediciones[i]), mediciones[1])
-}
+// for (let i=0; i<mediciones.length; i++){
+//     console.log(typeof(mediciones[i]), mediciones[i])
+// }
 
-console.log('')
-console.log('Paso 3: conversión')
+// console.log('')
+// console.log('Paso 3: conversión')
 // Recorrer nuevamente el array de mediciones 👆 de principio a fin
 // En cada ciclo transformar a tipo String los tipos Int y mostrar en consola
 // TIP: usar .toString()
 // BONUS: En en mismo bucle for pasar los tipo String a tipo Int con parseInt()
 // BONUS BONUS: En en mismo bucle for pasar los tipo String a tipo Int con parseInt()
 
-for (let i=0; i<mediciones.length; i++){
-}
+// for (let i=0; i<mediciones.length; i++){
+//     if (typeof(mediciones[i])==="number"){
+//         console.log(mediciones[i].toString(), typeof(mediciones[i].toString()))
+//     }
+//     if (typeof(mediciones[i])==="string"){
+//         console.log(parseInt(mediciones[i]),typeof(parseInt(mediciones[i])))
+//     }
+// }
 
-console.log('')
-console.log('Paso 4: Doble loop')
+// console.log('')
+// console.log('Paso 4: Doble loop')
 // BONUS BONUS BONUS (CRACK)
 // Usando los arrays ya declarados, recorrer el array jugadores y por cada jugador recorrer todas las mediciones
 // TIP: usar un bucle for dentro otro bucle for
 
 
-for (let i=0; i<jugadores.length; i++){
-    console.log(jugadores[i])
-    for (let i=0; i<mediciones.length; i++){
-        console.log(mediciones[i])
+// for (let i=0; i<jugadores.length; i++){
+//     console.log(jugadores[i])
+//     for (let i=0; i<mediciones.length; i++){
+//         console.log(mediciones[i])
     
-    }
-}
+//     }
+// }
 
 
 
