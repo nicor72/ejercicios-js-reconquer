@@ -1,46 +1,39 @@
 # ejercicios-js-reconquer
 
-## Ejercicio 7 🚀
+## Ejercicio 8
+
+[@webson2020](https://github.com/webson2020) pasa a la delantera! 🚀
 
 En [index.js](index.js) usando el siguiente arreglo codear:
 
-```javascript
-const autoreportes = [
-    {
-        jugador: 'Chupete Suazo',
-        CK: 99,
-        Orina: 'Amarilla',
-        animo: 'A full'
-    },{
-        jugador: 'Mago Valdivia',
-        CK: 1,
-        Orina: 'Verde',
-        animo: 'con caña'
-    }
-]
-```
+1. Crear un array con objetos (igual que el ejemplo del ejercicio anterior):
 
-1. Usando forEach recorrer el arreglo autoreportes y mostrar el estado de animo de cada jugador:
+2. Recorrer el arreglo y devolver una propiedad. Guardar en una constante:
 
-2. Usando map recorrer el arreglo autoreportes y devolver la orina de cada jugador. Guardar en una constante:
+3. Usar map o forEach para guardar en una constante todos los indices del arreglo.
 
-3. Usar map o forEach (justifique su respuesta). para guardar en una constante todos los indices del arreglo.
+4. Usar filter o find para encontrar o filtrar una propiedad.
 
 #### BONUS 🏅 
-4. Usar filter para filtrar las CK mayores a 50
+5. con el siguiente arreglo, usar forEach para sumar todos sus valores
+TIP: declarar un let en 0 antes del forEach
+
+```javascript
+const numbers = [3, 55, 62, 178]
+```
 
 #### BONUS BONUS 🏅 🏅
-5. Usar find para encontrar a chupete suazo
+6. usar reduce para sumar los valores del arreglo
 
 #### BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
-6. usar forEach para agregar una nueva propiedad momento: 'Entrenamiento' a cada jugador: 
+7. Mostrar el ultimo elemento del array sin importat su largo
 
 ## Tabla de posiciones
 
 | Nombre | BONUS    |
 | :-------- | :------- | 
+| [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 🏅 🏅 🎖 🎖 | 
 | [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🏅 🎖 🎖 🎖 | 
-| [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 🏅 🎖 | 
   
 
 
