@@ -292,88 +292,288 @@
 
 // jueves 22 de julio IIFEs
 
-console.group('Ejercicio 5');
+// console.group('Ejercicio 5');
 
-// Transformar la siguiente funcion en una IIFE.
-let app = (function iife() {
-    let examen = {
-        name: 'Resonancia Rodilla',
-        date: '18-10-2019',
-    }
+// // Transformar la siguiente funcion en una IIFE.
+// let app = (function iife() {
+//     let examen = {
+//         name: 'Resonancia Rodilla',
+//         date: '18-10-2019',
+//     }
 
-    console.log('Examen inicial: ', examen)
+//     console.log('Examen inicial: ', examen)
 
     
-    function changeName(newName) {
-        examen.name = newName
+//     function changeName(newName) {
+//         examen.name = newName
 
-    }
+//     }
 
-    function changeDate(newDate) {
-        examen.date = newDate
-    }
+//     function changeDate(newDate) {
+//         examen.date = newDate
+//     }
 
-    function createExamImage(examImage) {
-        examen.examImage = examImage
-    }
+//     function createExamImage(examImage) {
+//         examen.examImage = examImage
+//     }
 
-    function createdTypeInjury(injury){
-        examen.Injury = injury  
-    }
+//     function createdTypeInjury(injury){
+//         examen.Injury = injury  
+//     }
 
-    return {
-        examen,
-        changeName,
-        changeDate,
-        createExamImage,
-        createdTypeInjury
-    }
-})();
+//     return {
+//         examen,
+//         changeName,
+//         changeDate,
+//         createExamImage,
+//         createdTypeInjury
+//     }
+// })();
 
-console.log(app)
-app.changeName('ecografía')
-app.changeDate("20-10-2019")
-app.createExamImage({type: 'sangre', fecha: '22-07-2021'})
-app.createdTypeInjury('Brazo')
-console.log(app.examen)
+// console.log(app)
+// app.changeName('ecografía')
+// app.changeDate("20-10-2019")
+// app.createExamImage({type: 'sangre', fecha: '22-07-2021'})
+// app.createdTypeInjury('Brazo')
+// console.log(app.examen)
 
 
-let Aplication = (function() {
-    let alumno = {
-        name: 'Nicolás Rossetti',
-        course: 'cuarto medio C',
-    }
+// let Aplication = (function() {
+//     let alumno = {
+//         name: 'Nicolás Rossetti',
+//         course: 'cuarto medio C',
+//     }
 
-    console.log('Datos generales: ', alumno)
+//     console.log('Datos generales: ', alumno)
 
-    function ChangeCourse(newCourse) {
-        alumno.course = newCourse
-    }
+//     function ChangeCourse(newCourse) {
+//         alumno.course = newCourse
+//     }
 
-    return {
-        alumno,
-        ChangeCourse
-    }
-})();
+//     return {
+//         alumno,
+//         ChangeCourse
+//     }
+// })();
 
-    Aplication.ChangeCourse('cuarto medio A')
-    console.log(Aplication.alumno)
-// Usar la función changeName para cambiar el nombre del examen.
+//     Aplication.ChangeCourse('cuarto medio A')
+//     console.log(Aplication.alumno)
+// // Usar la función changeName para cambiar el nombre del examen.
 
-// Usar la función changeDate para cambiar la fecha del examen.
+// // Usar la función changeDate para cambiar la fecha del examen.
+
+// // BONUS
+// // Usar la función createExamImage para crear un ExamImage.
+// // pasando a la función un objeto con dos propiedades a elección
+
+// // Mostrar el consola el nuevo examen
+
+// // BONUS BONUS
+// // Crear una nueva función y usarla
+
+// // BONUS BONUS BONUS (CRACK)
+// // Crear un nuevo IIFE con al menos una función y usarla
+
+
+// console.groupEnd()
+
+// console.group('Ejercicio 6')
+
+// 1. Crear una función que reciba un argumento y devuelva el tipo de este.
+// TIP: usar typeof()
+
+// function devolverArgumento(argumentos) {
+//     console.log(typeof(argumentos));
+//     return typeof(argumentos)
+// }
+// devolverArgumento(34);
+// devolverArgumento('nombre');
+
+
+// 2. Crear la versión arrow function de la función anterior.
+
+// let devolverArgumento = (argumentos) => { 
+// console.log(typeof(argumentos));
+// return typeof(argumentos)
+// }
+//  devolverArgumento(34);
+//  devolverArgumento('nombre');   
+
+// 3. Agregar un default parameter al argumento de la función. Que sea undefined por defecto.
+
+// let devolverArgumento = (argumentos = undefined) => { 
+//     console.log(typeof(argumentos));
+//     return typeof(argumentos)
+//     }
+//      devolverArgumento(34);
+//      devolverArgumento('nombre');  
+//      devolverArgumento();
 
 // BONUS
-// Usar la función createExamImage para crear un ExamImage.
-// pasando a la función un objeto con dos propiedades a elección
+// 4. Escribir la arrow function en una linea.
 
-// Mostrar el consola el nuevo examen
 
 // BONUS BONUS
-// Crear una nueva función y usarla
+// 5. Pasarle un array o un objeto a la función.
+
+// let arreglo = ['a','b','c','d']
+// // let objeto = {
+// //     id: 1,
+// //     nombre: 'nicolás'
+// // }
+// function devolverArgumento(argumentos) {
+//     console.log(typeof(argumentos));
+//     return typeof(argumentos)
+// }
+// devolverArgumento(arreglo);
+// devolverArgumento(objeto);
+
 
 // BONUS BONUS BONUS (CRACK)
-// Crear un nuevo IIFE con al menos una función y usarla
+// 6. Crear un array con diferentes tipos (int, string, boolean, etc) 
+// y usar un for para recorrerlo y en cada iteración usar la función creada para mostrar el tipo en consola.
 
+// for(i = 0; i < arreglo.length; i++) {
+// const resultado = devolverArgumento(arreglo[i])
+// console.log(resultado)
+// }
+
+// const resultado = arreglo.map((current, key) => {
+//     devolverArgumento(current)
+//     console.log(current, key)
+//     return key
+// })
+
+// console.log(resultado)
+
+// console.groupEnd()
+
+// console.group('Ejercicio 7')
+
+// const autoreportes = [
+//     {
+//         jugador: 'Chupete Suazo',
+//         CK: 99,
+//         Orina: 'Amarilla',
+//         animo: 'A full'
+//     },{
+//         jugador: 'Mago Valdivia',
+//         CK: 1,
+//         Orina: 'Verde',
+//         animo: 'con caña'
+//     }
+// ]
+
+// 1. Usando forEach recorrer el arreglo autoreportes y mostrar el estado de animo de cada jugador:
+
+// autoreportes.forEach(({animo}, index) => console.log({animo}, index));
+
+// 2. Usando map recorrer el arreglo autoreportes y devolver la orina de cada jugador. Guardar en una constante:
+
+// autoreportes.map(({Orina}, index) => console.log({Orina}, index))
+
+// const orina = autoreportes.map(orina => orina.Orina);
+// console.log(orina);
+
+// 3. Usar map o forEach (justifique su respuesta). para guardar en una constante todos los indices del arreglo.
+//  MI RESPUESTA ES MAP PORQUE LO GUARDA COMO ARREGLO, PERO LA VERDAD NO ESTOY SEGURO.
+
+// const guardarindicesmap  = autoreportes.map(({Orina}, index) => index)
+// console.log(guardarindicesmap)
+
+
+// BONUS
+// 4. Usar filter para filtrar las CK mayores a 50
+
+// let ckmenor50 = autoreportes.filter(ckmenor50 => ckmenor50.CK > 50);
+// console.log(ckmenor50);
+
+// BONUS BONUS
+// 5. Usar find para encontrar a chupete suazo
+
+// let chupete = autoreportes.find(chupete => chupete.jugador === 'Chupete Suazo');
+// console.log(chupete)
+
+// BONUS BONUS BONUS
+// 6. usar forEach para agregar una nueva propiedad momento: 'Entrenamiento' a cada jugador: 
+
+// autoreportes.forEach((autoreporte)=> {
+//     autoreporte={
+//         momento: 'Entrenamiento',
+//         minutos: 90,
+//         ...autoreporte
+//     }
+// })
+
+// console.groupEnd()
+
+
+console.group('Ejercicio 8')
+
+// 1. Crear un array con objetos (igual que el ejemplo del ejercicio anterior):
+
+
+const pedidos = [
+    {
+        categoría: 'MATERIALES COVID-19',
+        nombre: 'Mascarillas 3 pliegues',
+        solicitud: 'cajas (32u)',
+        cantidad: 10
+    },{
+        categoría: 'MEDICAMENTOS',
+        nombre: 'Amoxicilina 500mg',
+        solicitud: 'cajas (6u)',
+        cantidad: 7
+    }
+]
+
+
+// 2. Recorrer el arreglo y devolver una propiedad. Guardar en una constante:
+// si pongo forEach me sale undifined revisar eso.
+
+const nombres = pedidos.map(pedido => pedido.nombre);
+console.log(nombres);
+
+// 3. Usar map o forEach para guardar en una constante todos los indices del arreglo.
+
+const indices  = pedidos.map((index) => index)
+console.log(indices)
+
+// 4. Usar filter o find para encontrar o filtrar una propiedad.
+// por qué no me sale la cantidad 7??
+
+const cantidades = pedidos.find(pedido => pedido.cantidad > 5)
+console.log(cantidades)
+
+// let cantidades = pedidos.find(cantidades => cantidades.cantidad < 5);
+// console.log(cantidades)
+
+let cantidadMayor5 = pedidos.filter(cantidadMayor5 => cantidadMayor5.cantidad > 5);
+console.log(cantidadMayor5);
+
+// BONUS
+// 5. con el siguiente arreglo, usar forEach para sumar todos sus valores
+// TIP: declarar un let en 0 antes del forEach
+
+const numbers = [3, 55, 62, 178]; 
+let suma = 0;
+numbers.forEach(function (numero) {
+    suma += numero;
+})
+console.log(suma)
+
+
+// BONUS BONUS
+// 6. usar reduce para sumar los valores del arreglo
+// a= acumulador o valor inicial
+// b= current valor
+
+let total = numbers.reduce((a, b) => a + b, 0);
+console.log(total)
+
+// BONUS BONUS BONUS
+// 7. Mostrar el ultimo elemento del array sin importat su largo
+
+numbers.forEach((valor, index) => console.log(numbers[3]));
 
 console.groupEnd()
-
