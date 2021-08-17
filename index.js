@@ -508,72 +508,258 @@
 // console.groupEnd()
 
 
-console.group('Ejercicio 8')
+// console.group('Ejercicio 8')
 
-// 1. Crear un array con objetos (igual que el ejemplo del ejercicio anterior):
-
-
-const pedidos = [
-    {
-        categoría: 'MATERIALES COVID-19',
-        nombre: 'Mascarillas 3 pliegues',
-        solicitud: 'cajas (32u)',
-        cantidad: 10
-    },{
-        categoría: 'MEDICAMENTOS',
-        nombre: 'Amoxicilina 500mg',
-        solicitud: 'cajas (6u)',
-        cantidad: 7
-    }
-]
+// // 1. Crear un array con objetos (igual que el ejemplo del ejercicio anterior):
 
 
-// 2. Recorrer el arreglo y devolver una propiedad. Guardar en una constante:
-// si pongo forEach me sale undifined revisar eso.
+// const pedidos = [
+//     {
+//         categoría: 'MATERIALES COVID-19',
+//         nombre: 'Mascarillas 3 pliegues',
+//         solicitud: 'cajas (32u)',
+//         cantidad: 10
+//     },{
+//         categoría: 'MEDICAMENTOS',
+//         nombre: 'Amoxicilina 500mg',
+//         solicitud: 'cajas (6u)',
+//         cantidad: 7
+//     }
+// ]
 
-const nombres = pedidos.map(pedido => pedido.nombre);
-console.log(nombres);
 
-// 3. Usar map o forEach para guardar en una constante todos los indices del arreglo.
+// // 2. Recorrer el arreglo y devolver una propiedad. Guardar en una constante:
+// // si pongo forEach me sale undifined revisar eso (el forEach no devuelve nada acordarse.)
 
-const indices  = pedidos.map((index) => index)
-console.log(indices)
+// const nombres = pedidos.map(pedido => pedido.nombre);
+// console.log(nombres);
 
-// 4. Usar filter o find para encontrar o filtrar una propiedad.
-// por qué no me sale la cantidad 7??
+// // 3. Usar map o forEach para guardar en una constante todos los indices del arreglo.
 
-const cantidades = pedidos.find(pedido => pedido.cantidad > 5)
-console.log(cantidades)
+// const indices  = pedidos.map((pedido, index) => index)
+// console.log(indices)
 
-// let cantidades = pedidos.find(cantidades => cantidades.cantidad < 5);
+// // 4. Usar filter o find para encontrar o filtrar una propiedad.
+// // por qué no me sale la cantidad 7?? /el find ecuentr el primero que encuentra)
+
+// const cantidades = pedidos.find(pedido => pedido.cantidad > 5)
 // console.log(cantidades)
 
-let cantidadMayor5 = pedidos.filter(cantidadMayor5 => cantidadMayor5.cantidad > 5);
-console.log(cantidadMayor5);
+// // let cantidades = pedidos.find(cantidades => cantidades.cantidad < 5);
+// // console.log(cantidades)
 
-// BONUS
-// 5. con el siguiente arreglo, usar forEach para sumar todos sus valores
-// TIP: declarar un let en 0 antes del forEach
+// let cantidadMayor5 = pedidos.filter(cantidadMayor5 => cantidadMayor5.cantidad > 5);
+// console.log(cantidadMayor5);
 
-const numbers = [3, 55, 62, 178]; 
-let suma = 0;
-numbers.forEach(function (numero) {
-    suma += numero;
-})
-console.log(suma)
+// // BONUS
+// // 5. con el siguiente arreglo, usar forEach para sumar todos sus valores
+// // TIP: declarar un let en 0 antes del forEach
+
+// const numbers = [3, 55, 62, 178]; 
+// let suma = 0;
+// numbers.forEach(function (numero) {
+//     suma += numero;
+// })
+// console.log(suma)
 
 
-// BONUS BONUS
-// 6. usar reduce para sumar los valores del arreglo
-// a= acumulador o valor inicial
-// b= current valor
+// // BONUS BONUS
+// // 6. usar reduce para sumar los valores del arreglo
+// // a= acumulador o valor inicial
+// // b= current valor
 
-let total = numbers.reduce((a, b) => a + b, 0);
-console.log(total)
+// let total = numbers.reduce((a, b) => a + b, 0);
+// console.log(total)
 
-// BONUS BONUS BONUS
-// 7. Mostrar el ultimo elemento del array sin importat su largo
+// // BONUS BONUS BONUS
+// // 7. Mostrar el ultimo elemento del array sin importat su largo
 
-numbers.forEach((valor, index) => console.log(numbers[3]));
+// // numbers.forEach((valor, index) => 
+// console.log(numbers[numbers.length -1]);
 
-console.groupEnd()
+// console.groupEnd()
+
+
+// Ejercicio 9: Hacer una función que devuelva la cantidad de días que lleva muerto Carlitos Menem (2021-02-14)
+
+// let fechaMuerteCarlitos = new Date('02/14/2021');
+// let currentTime = new Date();
+// let futurama = new Date('10/14/2071');
+
+// const milisegundosDia = 24 * 60 * 60 * 1000;
+
+// let milisegundosTranscurridos = Math.abs(fechaMuerteCarlitos.getTime() - currentTime.getTime());
+// let diasTranscurridos = Math.round(milisegundosTranscurridos/milisegundosDia);
+// let milisegundosHastaFuturama = Math.abs(fechaMuerteCarlitos.getTime() - futurama.getTime());
+// let diasHastaFuturama = Math.round(milisegundosHastaFuturama/milisegundosDia);
+// let añosHastaFuturama = Math.abs(fechaMuerteCarlitos.getFullYear() - futurama.getFullYear());
+
+
+// console.log(fechaMuerteCarlitos);
+// console.log(currentTime);
+// console.log(milisegundosDia);
+// console.log(milisegundosTranscurridos);
+// console.log(diasTranscurridos);
+// console.log(milisegundosHastaFuturama);
+// console.log(diasHastaFuturama);
+// console.log(añosHastaFuturama);
+
+// console.log(); 
+
+
+// FUNCIÓN PARA SABER CUÁNTOS DÍAS HA TRANSCURRIDO DESDE LA MUERTE DE CARLITOS A LA FECHA Y AL (2071, 10, 14)
+
+function calcularDiferenciaDias(fecha1,fecha2) {
+   if((!fecha1 instanceof Date) || (!fecha2 instanceof Date)) {
+       throw TypeError('Carlitos necesita que ambos argumentos sean de tipo fecha(Date)');
+   }
+
+   let diferencia = (fecha2.getTime() - fecha1.getTime()) / 1000;
+   diferencia /= (60 * 60 * 24);
+
+   return Math.abs(Math.floor(diferencia))
+}
+
+console.log(new Date());
+
+console.log();
+
+try {
+    console.log(calcularDiferenciaDias(new Date(), new Date(new Date().setDate(new Date().getDate() + 1))));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
+
+console.log();
+
+try {
+    console.log(calcularDiferenciaDias(new Date(2021, 8, 16), new Date(2021, 1, 14)));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
+
+console.log();
+
+try {
+    console.log(calcularDiferenciaDias(new Date(2021, 1, 14), new Date(2071, 10, 14)));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
+
+
+
+
+// FUNCIÓN PARA SABER CUÁNTOS SEMANAS HA TRANSCURRIDO DESDE LA MUERTE DE CARLITOS A LA FECHA Y AL (2071, 10, 14)
+
+function calcularDiferenciaSemanas(fecha1,fecha2) {
+    if((!fecha1 instanceof Date) || (!fecha2 instanceof Date)) {
+        throw TypeError('Carlitos necesita que ambos argumentos sean de tipo fecha(Date)');
+    }
+ 
+    let diferencia = (fecha2.getTime() - fecha1.getTime()) / 1000;
+    diferencia /= (60 * 60 * 24 * 7);
+ 
+    return Math.abs(Math.floor(diferencia))
+ }
+
+ console.log(new Date());
+
+ console.log();
+ 
+ try {
+     console.log(calcularDiferenciaSemanas(new Date(), new Date(new Date().setDate(new Date().getDate() + 1))));
+ } catch (e) {
+     console.log('Error: ${e.message}');
+ }
+ 
+ console.log();
+
+ try {
+    console.log(calcularDiferenciaSemanas(new Date(2021, 8, 16), new Date(2021, 1, 14)));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
+
+console.log();
+
+try {
+    console.log(calcularDiferenciaSemanas(new Date(2021, 1, 14), new Date(2071, 10, 14)));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
+
+
+
+// FUNCIÓN PARA SABER CUÁNTOS MESES HAN TRANSCURRIDO DESDE LA MUERTE DE CARLITOS A LA FECHA Y AL (2071, 10, 14)
+
+function calcularDiferenciaMeses(fecha1,fecha2) {
+    if((!fecha1 instanceof Date) || (!fecha2 instanceof Date)) {
+        throw TypeError('Carlitos necesita que ambos argumentos sean de tipo fecha(Date)');
+    }
+ 
+    let diferencia = (fecha2.getTime() - fecha1.getTime()) / 1000;
+    diferencia /= (60 * 60 * 24 * 7 * 4);
+ 
+    return Math.abs(Math.floor(diferencia))
+ }
+ 
+ console.log(new Date());
+
+ console.log();
+
+ try {
+    console.log(calcularDiferenciaSemanas(new Date(), new Date(new Date().setDate(new Date().getDate() + 1))));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
+
+
+ try {
+    console.log(calcularDiferenciaMeses(new Date(2021, 8, 16), new Date(2021, 1, 14)))
+ } catch (e) {
+    console.log('Error: ${e.message}');
+ }
+
+ try {
+    console.log(calcularDiferenciaMeses(new Date(2021, 1, 14), new Date(2071, 10, 14)));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
+
+
+
+// FUNCIÓN PARA SABER CUÁNTOS AÑOS HAN TRANSCURRIDO DESDE LA MUERTE DE CARLITOS A LA FECHA Y AL (2071, 10, 14)
+
+function calcularDiferenciaAños(fecha1,fecha2) {
+    if((!fecha1 instanceof Date) || (!fecha2 instanceof Date)) {
+        throw TypeError('Carlitos necesita que ambos argumentos sean de tipo fecha(Date)');
+    }
+ 
+    let diferencia = (fecha2.getTime() - fecha1.getTime()) / 1000;
+    diferencia /= (60 * 60 * 24);
+    diferencia /= 365.25;
+    return Math.abs(Math.floor(diferencia))
+ }
+ 
+ console.log(new Date());
+
+ console.log();
+
+ try {
+    console.log(calcularDiferenciaAños(new Date(), new Date(new Date().setDate(new Date().getDate() + 1))));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
+
+
+ try {
+    console.log(calcularDiferenciaAños(new Date(2021, 8, 16), new Date(2021, 1, 14)))
+ } catch (e) {
+    console.log('Error: ${e.message}');
+ }
+
+ try {
+    console.log(calcularDiferenciaAños(new Date(2021, 1, 14), new Date(2071, 10, 14)));
+} catch (e) {
+    console.log('Error: ${e.message}');
+}
