@@ -3,7 +3,7 @@
 // hacer una funcion que devuelva la cantidad de dias que lleva muerto carlitos menem  (dinamico)  (5 estrellas normales)
 //Tip: una funcion que no reciba argumentos (solo en el primero).//
 
-let fechaFallecimiento = new Date('10/02/2021');
+let fechaFallecimiento = new Date('02/14/2021');
 let today = new Date();
 let year = today.getFullYear() - fechaFallecimiento.getFullYear();
 
@@ -17,8 +17,6 @@ console.log('Carlitos Menem lleva:', year , ' años fallecido');
 
 
 // pasarle una fecha futura (x5 estrellas crack)
-
-
 
 let fecha1 = new Date('02/14/2021');
 let fecha2 = new Date('02/14/2069');
