@@ -1,3 +1,208 @@
+//tarea
+
+// hacer una funcion que devuelva la cantidad de dias que lleva muerto carlitos menem  (dinamico)  (5 estrellas normales)
+//Tip: una funcion que no reciba argumentos (solo en el primero).//
+
+let fechaFallecimiento = new Date('10/02/2021');
+let today = new Date();
+let year = today.getFullYear() - fechaFallecimiento.getFullYear();
+
+fechaFallecimiento.setFullYear(today.getFullYear);
+
+if(today > fechaFallecimiento){
+    --year;
+}
+
+console.log('Carlitos Menem lleva:', year , ' años fallecido');
+
+
+// pasarle una fecha futura (x5 estrellas crack)
+
+
+
+let fecha1 = new Date('02/14/2021');
+let fecha2 = new Date('02/14/2069');
+
+let milisegundosDia = 24 * 60 * 60 * 1000;
+let milisegundosTranscurridos = Math.abs(fecha1.getTime() - fecha2.getTime());
+let diasTranscurridos = Math.round(milisegundosTranscurridos/milisegundosDia);
+
+console.log( 'Carlitos Menem fallecio hace:', diasTranscurridos,'dias');
+
+
+console.group('Ejercicio 8')
+
+// 1. Crear un array con objetos (igual que el ejemplo del ejercicio anterior):
+
+const automoviles = [
+    {
+        marca: 'Ferrari',
+        año: 2021,
+        color: 'rojo'
+        
+    },{
+        marca: 'Tesla',
+        año: 2022,
+        color: 'blanco'       
+    },
+    {
+        marca: 'Mclaren',
+        año: 2020,
+        color: 'amarillo'       
+    }
+]
+// 2. Recorrer el arreglo y devolver una propiedad. Guardar en una constante:
+
+const marcas = automoviles.map((automovil)=>(automovil.marca))
+console.log(marcas)
+
+// 3. Usar map o forEach para guardar en una constante todos los indices del arreglo.
+
+const autos = automoviles.map((automovil,index)=>(index))
+console.log(autos)
+
+// 4. Usar filter o find para encontrar o filtrar una propiedad.
+
+const año = automoviles.filter((marca) => marca.año == 2022)
+console.log(año)
+
+
+// BONUS
+// 5. con el siguiente arreglo, usar forEach para sumar todos sus valores
+// TIP: declarar un let en 0 antes del forEach
+
+const numbers = [3, 55, 62, 178]
+
+let suma= 0
+numbers.forEach(function(a){suma += a;});
+console.log(suma);
+
+// BONUS BONUS
+// 6. usar reduce para sumar los valores del arreglo
+
+let sumar = numbers.reduce((a, b) => a + b);
+console.log(sumar);
+
+// BONUS BONUS BONUS
+// 7. Mostrar el ultimo elemento del array sin importat su largo
+
+console.log(automoviles[automoviles.length-1])
+
+// const autos = automoviles.map((automovil,index)=>(index))
+// console.log(autos)
+
+console.groupEnd()
+
+/////////////////////////////
+
+
+console.group('Ejercicio 7')
+
+const autoreportes = [
+    {
+        jugador: 'Chupete Suazo',
+        CK: 99,
+        Orina: 'Amarilla',
+        animo: 'A full'
+    },{
+        jugador: 'Mago Valdivia',
+        CK: 1,
+        Orina: 'Verde',
+        animo: 'con caña'
+    }
+]
+
+// 1. Usando forEach recorrer el arreglo autoreportes y mostrar el estado de animo de cada jugador:
+
+autoreportes.forEach((autoreporte)=>{
+    console.log(autoreporte.animo)
+})
+
+
+// 2. Usando map recorrer el arreglo autoreportes y devolver la orina de cada jugador. Guardar en una constante:
+
+const onrinas = autoreportes.map((autoreporte)=>(autoreporte.orina))
+
+// 3. Usar map o forEach (justifique su respuesta). para guardar en una constante todos los indices del arreglo.
+
+//con map:
+const onrinas_2 = autoreportes.map((autoreporte,index)=>(index))
+
+const nombres = autoreportes.map((jugador)=>jugador.jugador)
+
+//------------//
+//con foreach
+
+let orinas = []
+autoreportes.forEach((autoreporte,indice)=>{
+    orinas.push(indice)
+})
+
+
+// BONUS
+// 4. Usar filter para filtrar las CK mayores a 50
+
+const PlayerCK = autoreportes.filter((player) => player.ck > '50')
+
+// BONUS BONUS
+// 5. Usar find para encontrar a chupete suazo
+
+autoreportes.find((jugador)=>{
+    jugador === 'Chupete Suazo'
+    return autoreportes
+})
+
+
+autoreportes.find(({jugador,Orina,Ck})=> Orina === 'amarilla' && jugador === 'Chupete Suazo')
+
+
+
+// BONUS BONUS BONUS
+// 6. usar forEach para agregar una nueva propiedad momento: 'Entrenamiento' a cada jugador: 
+
+
+autoreportes.forEach((autoreporte)=>{ 
+autoreporte.momento='entrenamiento'
+autoreporte.pcr='test'
+})
+
+//otra manera
+autoreportes.forEach((autoreporte)=>{ 
+    autoreporte={
+        momento: 'entrenamiento',
+        pcr: 'test',
+        ...autoreporte
+    }
+    })
+
+
+
+
+///////////////////////////////////
+
+const verbos = ['jugó', 'anotó', 'pegó']
+
+verbos.map((verbo)=>{
+    console.log(verbo)
+    return verbos
+})
+
+
+verbos.find((verbo)=>{
+    verbo === 'pego'
+    return verbos
+})
+
+
+for (let i=0; i<verbos.length; i++){
+    getID(verbos[i]);
+    console.log(getID(verbos[i]))
+}
+
+console.groupEnd()
+
+
+/////////////////////////////////////
 console.group('Ejercicio 6')
 
 // 1. Crear una función que reciba un argumento y devuelva el tipo de este.
@@ -7,28 +212,40 @@ console.group('Ejercicio 6')
         return typeof(argumento)
     }
 
-    
 // 2. Crear la versión arrow function de la función anterior.
 
-    let getID = (argumento) => typeof(argumento)
-
+    let getID2 = (argumento) => typeof(argumento)
 
 // 3. Agregar un default parameter al argumento de la función. Que sea undefined por defecto.
 
-    let getID = (argumento=undefined) => typeof(argumento)
+    let getID3 = (argumento = undefined) => typeof(argumento)
+    console.log(getID)
 
 // BONUS
 // 4. Escribir la arrow function en una linea.
 
+    let arrow = () => console.log(arrow)
+
 // BONUS BONUS
 // 5. Pasarle un array o un objeto a la función.
+
+    
+
 
 // BONUS BONUS BONUS (CRACK)
 // 6. Crear un array con diferentes tipos (int, string, boolean, etc) 
 // y usar un for para recorrerlo y en cada iteración usar la función creada para mostrar el tipo en consola.
 
+// const verbos = ['jugó', 'anotó', 'pegó']
 
-console.groupEnd()
+// for (let i=0; i<verbos.length; i++){
+//     getID(verbos[i]);
+//     console.log(getID(verbos[i]))
+// }
+
+// console.groupEnd()
+
+
 
 ////////////////////////////
 
