@@ -1,39 +1,34 @@
 # ejercicios-js-reconquer
 
-## Ejercicio 8
+## Ejercicio 10
 
-[@webson2020](https://github.com/webson2020) pasa a la delantera! 🚀
+### LLego la inflación a ChileZuela! 😑
 
-En [index.js](index.js) usando el siguiente arreglo codear:
+| Nombre | BONUS    | Total |
+| :-------- | :------- | :------- |
+| [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🎖 🎖 🎖 🎖 🎖 🎖 🎖 | 22
+| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🎖 🎖 🎖 🎖 🎖 🎖 | 19
 
-1. Crear un array con objetos (igual que el ejemplo del ejercicio anterior):
+Necesitamos agrupar las medallas en otro emoji a elección. Para lo cual se necesita crear una función que reciba el número de medallas y nos devuelva el número del nuevo emoji.
 
-2. Recorrer el arreglo y devolver una propiedad. Guardar en una constante:
+En [index.js](index.js) codear:
 
-3. Usar map o forEach para guardar en una constante todos los indices del arreglo.
+1. Una función con un parámetro tipo número.
 
-4. Usar filter o find para encontrar o filtrar una propiedad.
+2. Crear una lógica para calcular cada 5 medallas un nuevo emoji y retornarlo.
+
+3. Debe tener un let o const que solo viva en el scope de la función. (Demostrar que no vive fuera de la función).
 
 #### BONUS 🏅 
-5. con el siguiente arreglo, usar forEach para sumar todos sus valores
-TIP: declarar un let en 0 antes del forEach
-
-```javascript
-const numbers = [3, 55, 62, 178]
-```
+4. Crear otro parametro en la función para que el emoji sea dinámico.
 
 #### BONUS BONUS 🏅 🏅
-6. usar reduce para sumar los valores del arreglo
+6. Crear la versión arrow function de la misma función.
 
 #### BONUS BONUS BONUS (CRACK) 🏅 🏅 🎖
-7. Mostrar el ultimo elemento del array sin importat su largo
+7. Transformar la función en un IFEE.
 
-## Tabla de posiciones
 
-| Nombre | BONUS    |
-| :-------- | :------- | 
-| [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 🏅 🏅 🎖 🎖 | 
-| [@Camilo Alarcón H.](https://github.com/Camilo-Alarcon) | 🏅 🏅 🏅 🎖 🎖 🎖 | 
   
 
 
