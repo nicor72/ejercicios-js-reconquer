@@ -2,8 +2,6 @@
 
 ## Ejercicio 10
 
-### LLego la inflación a ChileZuela! 😑
-
 | Nombre | BONUS    | Total |
 | :-------- | :------- | :------- |
 | [@webson2020](https://github.com/webson2020) | 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🏅 🎖 🎖 🎖 🎖 🎖 🎖 🎖 | 22
